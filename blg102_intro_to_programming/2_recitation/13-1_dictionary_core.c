@@ -1,3 +1,17 @@
+/*
+    Write a C program that is used for ENG-TUR translation. Program has `dictionary_core`, `dictionary_interface` & `dictionary` files.
+        1. 'dictionary_core' file works like a back-end file for a database. This file directly accesses the database.
+        2. 'dictionary_interface' file works like a front-end file for a database. This file uses to interact with the user. User want to do actions below:
+            - run dictionary
+            - add a word
+            - delete a word
+            - change a word
+            - translate a word
+            - list all
+            - list words have a specific letter as a first letter
+        + 'dictionary' file has a common library.
+*/
+
 #include "13-1_dictionary.h"
 
 bool check_open_file(GDBM_FILE db){
